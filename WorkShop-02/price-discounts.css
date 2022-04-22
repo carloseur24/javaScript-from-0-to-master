@@ -1,0 +1,123 @@
+body {
+    margin: 5% 18%;
+    background-image: url(../WorkShop-01/src/17011-4k.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: 'Barlow', sans-serif;
+}
+
+h1 {
+    margin: 28px auto;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 900;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+input {
+    background-color: rgba(34, 177, 170, 0);
+    padding: 5.6px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(24, 24, 24);
+}
+
+section {
+    margin: 0 25%;
+    background-color: rgb(131, 158, 173);
+    box-shadow: -1px -1px 0px rgb(239, 241, 233),
+        1px 1px 0px rgb(27, 27, 27);
+    padding: 20px 3em;
+    border-radius: 3px;
+}
+
+section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+label,
+h1 {
+    color: aliceblue;
+}
+
+label {
+    border-radius: 3px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button {
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 85%;
+    font-family: 'Barlow', sans-serif;
+    background-color: rgb(255, 255, 255);
+    padding: 5.54px;
+    text-transform: uppercase;
+}
+
+button {
+    border-radius: 3px;
+}
+
+
+#resultf {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.82);
+    border-radius: 3px;
+    padding: 10px;
+}
+
+#resultf2 {
+    display: flex;
+    background-color: #ffffffd1;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+#resultT {
+    font-size: 80%;
+    margin: 0;
+    align-self: center;
+    text-transform: uppercase;
+}
+
+#resultC {
+    text-transform: uppercase;
+    text-align: center;
+    color: #2ca874;
+}
+
+#result {
+    color: #2ca874;
+    border-radius: 3px;
+    padding: 10px 0px 10px 10px;
+    margin: 0;
+    justify-self: center;
+}
+
+#inputcupon {
+    text-transform: capitalize;
+    background-color: #22b1aa00;
+    width: 100%;
+    padding: 5.6px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(24, 24, 24);
+    color: white;
+}
+
+#color {
+    color: black;
+}
