@@ -38,7 +38,7 @@ function onbuttonresult() {
     const inputP = document.getElementById('inputprice').value;
     const inputD = document.getElementById('inputdiscount').value;
     if (inputP == false || inputD == false) {
-        alert('Fill all the fields')
+        alert('Fill in all the fields')
     } else {
         inputC = document.getElementById('inputcupon').value;
         console.log(inputC)
