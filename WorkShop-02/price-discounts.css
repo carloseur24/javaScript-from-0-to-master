@@ -65,6 +65,7 @@ label {
 
 button {
     border: none;
+    border-radius: 3px;
     color: rgb(0, 0, 0);
     padding: 16px 32px;
     text-decoration: none;
@@ -76,11 +77,6 @@ button {
     padding: 5.54px;
     text-transform: uppercase;
 }
-
-button {
-    border-radius: 3px;
-}
-
 
 #resultf {
     display: flex;
