@@ -1,3 +1,7 @@
-node_module/
+node_modules/
 .vscode/
 WorkShop-01/src
+src/
+watch-it.js
+package-lock.json
+package.json
