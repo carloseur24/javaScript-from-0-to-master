@@ -58,7 +58,7 @@ const calculate = () => {
             setTimeout(() => {
                 button.removeAttribute('hidden')
                 p.remove()
-            }, 2000);
+            }, 7000);
             if (done == 1) {
                 return reset();
             } else {
@@ -67,7 +67,7 @@ const calculate = () => {
                     getAdvice()
                     done = 1;
                     // console.log(done);
-                }, 2000);
+                }, 7000);
             }
         }
     }
@@ -90,7 +90,7 @@ const calculate = () => {
                 setTimeout(() => {
                     button.removeAttribute('hidden')
                     p.remove()
-                }, 10000);
+                }, 7000);
             } else {
                 text = document.createTextNode('Based in your monthly income, We can tell you that you have a financial Surplus and recommend save: $' + saveCapacity)
                 section.appendChild(p)
@@ -109,7 +109,7 @@ const calculate = () => {
                 setTimeout(() => {
                     button.removeAttribute('hidden')
                     p.remove()
-                }, 10000);
+                }, 7000);
             } else {
                 text = document.createTextNode('Based in your monthly income, We can tell you that you have a financial Surplus and recommend save: $' + saveCapacity)
                 section.appendChild(p)
