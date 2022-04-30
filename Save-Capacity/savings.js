@@ -57,7 +57,6 @@ const calculate = () => {
             button.hidden = true
             setTimeout(() => {
                 button.removeAttribute('hidden')
-                p.remove()
             }, 7000);
             if (done == 1) {
                 return reset();
