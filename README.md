@@ -23,7 +23,7 @@ Here I'm gonna record my progress through my path in JavasScript
 - Creating functions.
 - Integrating Js with Html.
 
-## Workshop Nroº 2: Analisis of Salaries
+## Workshop Nroº 4: Analisis of Salaries
 
 - Defining formulas.
 - Implementation at Js.

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./savings.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <title>Save for your Future</title>
+</head>
+
+<body>
+    <div class="container">
+        <Header>
+            <h1>Saving Is the first step to be rich</h1>
+        </Header>
+        <div class="container-grid">
+            <section class="income">
+                <div class="form">
+                    <h2>what is your monthly income?</h2>
+                    <input id="input1" class="input" type="number" placeholder="$">
+                    <span>Taking into consideration all font of income</span>
+                </div>
+            </section>
+            <section class="fixed">
+                <div class="form">
+                    <h2>total amount of monthly fixed expenses </h2>
+                    <input id="input2" class="input" type="number" placeholder="$">
+                    <span>Taking into consideration all from alimentation, services and rents if
+                        there is</span>
+                </div>
+            </section>
+            <section class="variable">
+                <div class="form">
+                    <h2>total amount of monthly variable expenses </h2>
+                    <input id="input3" class="input" type="number" placeholder="$">
+                    <span>here are all the expenses like lunch out of
+                        house, snacks and tranport</span>
+                </div>
+            </section>
+            <button id='button' class = "offset" type="button" onclick="calculate()">Calculate</button>
+            <button class = "offset2" type="button" onclick="reset()">Reset</button>
+            <section id="save">
+            </section>
+            <section id="save2">
+            </section>
+            <section id="save3">
+            </section>
+        </div>
+    </div>
+    <div class="container">
+        <h3>This is a fictitious table of income in Venezuela</h3>
+        <div class="table">
+            <section id="save4"></section>
+        </div>
+        <script src="./advices.js"></script>
+        <script src="./salaries.js"></script>
+        <script src="./example.js"></script>
+        <script src="./savings.js"></script>
+    </div>
+</body>
+
+</html>
