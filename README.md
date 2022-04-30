@@ -15,3 +15,17 @@ Here I'm gonna record my progress through my path in JavasScript
 - Implementation at Js.
 - Creating functions.
 - Integrating Js with Html.
+
+## Workshop Nroº 3: Mean, Armonic Mean, Median and Mode
+
+- Defining formulas.
+- Implementation at Js.
+- Creating functions.
+- Integrating Js with Html.
+
+## Workshop Nroº 2: Analisis of Salaries
+
+- Defining formulas.
+- Implementation at Js.
+- Creating functions.
+- Integrating Js with Html.
