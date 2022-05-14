@@ -21,11 +21,17 @@ h1 {
 h2 {
   text-align: center;
   margin: 0 1em 1.2em 1em;
-  text-transform: capitalize;
+  text-transform: uppercase;
   padding: 5px;
   background: #FFFFFF;
   color: #003f91;
   border-radius: 5px;
+}
+h3{
+  text-decoration: overline;
+  text-transform: uppercase;
+  color: #003f91;
+  padding: 5px;
 }
 ul{
   padding-inline-start: 20px;
@@ -35,6 +41,7 @@ ol {
 }
 
 li {
+  margin: 18px 0;
   font-size: 1em;
   text-transform: capitalize;
 }
