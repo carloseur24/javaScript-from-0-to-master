@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./geometrical-figures.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <title>Geometrical Figures</title>
+</head>
+
+<body>
+    <header>
+
+        <h1>
+            <span>Welcome</span> let's to Show how to calculate!
+        </h1>
+    </header>
+    <div class='container'>
+
+        <section class="item">
+            <form class='input' id="i1">
+                <h2 class="tittle"> Square's Area and Perimeter </h2>
+                <label for="InputSquare">
+                    Enter the length of each side of your Square
+                </label>
+                <div class='center'>
+                    <input id="InputSquare" type="number" onkeyup="listeningS()">
+                </div>
+                <div class="div">
+                    <button class="squarea" type='button' onclick="calculatePerimeterSquare()" disabled>
+                        Perimeter</button>
+                    <button class="squareb" type='button' onclick="calculateAreaSquare()" disabled> Area</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="item2">
+            <form class='input' id="i2">
+                <h2 class="tittle">Triangle's Area and Perimeter</h2>
+                <label class='complete' for="InputTrianglea">
+                    Enter the length of each side of your triangle
+                </label>
+                <div class="center2">
+                    <input id="InputTrianglea" type="number">
+                    <input id="InputTriangleb" type="number">
+                    <input id="InputTrianglec" type="number" onkeyup="listeningT()">
+                </div>
+                <div class="div">
+                    <button class="trianglea" type="button" onclick="calculatePerimeterTriangle()" disabled>
+                        Perimeter</button>
+                    <button class="triangleb" type="button" onclick="calculateAreaTriangle()" disabled> Area</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="item" id="item3">
+            <form class='input' id="i3">
+                <h2 class="tittle">Circle's Area and Perimeter</h2>
+                <label for="InputCircle">
+                    Enter the radius of your Circle
+                </label>
+                <div class="center">
+                    <input id='InputCircle' type="number" onkeyup="listeningC()">
+                </div>
+                <div class="div">
+                    <button class="circlea" id='1' type="button" onclick="calculatePerimeterCircle()" disabled>
+                        Perimeter</button>
+                    <button class="circleb" id='2' type="button" onclick="calculateAreaCircle()" disabled> Area</button>
+                </div>
+            </form>
+        </section>
+
+    </div>
+    <div class="back"><a href="/views/index.hbs">back</a></div>
+    <script src="./interaction.js"></script>
+    <script src="./geometrical-figures.js"></script>
+</body>
+
+</html>

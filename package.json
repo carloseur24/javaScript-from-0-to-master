@@ -1,0 +1,30 @@
+{
+  "name": "js_from_begin-to-expert",
+  "version": "1.0.0",
+  "description": "Here I'm gonna record my progress through my path in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "styles": "node-sass scss/*.scss css/*.css",
+    "start": "node app",
+    "starter": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carloseur24/java-from-0-to-master.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carloseur24/java-from-0-to-master/issues"
+  },
+  "homepage": "https://github.com/carloseur24/java-from-0-to-master#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "hbs": "^4.2.0",
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}

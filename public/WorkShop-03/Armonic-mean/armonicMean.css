@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    background: #FFFFFF;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 50px;
+    font-size: 2em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #003F91;
+}
+
+h2 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-align: center;
+    text-transform: uppercase;
+    background: #FFFFFF;
+    color: #003f91;
+    border-radius: 5px;
+}
+
+span {
+    font-size: 1.5em;
+    color: #e4b314;
+}
+
+button {
+    text-transform: uppercase;
+    margin: 0;
+    text-decoration: none;
+    border-radius: 4px;
+    background: #ffffff;
+    border: 2px solid;
+    line-height: 1;
+    padding: 1em 2em;
+    transition: 0.25s;
+    color: #5da9e9;
+    box-shadow:
+        0.3em 0.3em 0 0 #ffffff,
+        inset 0.3em 0.3em 0 0 #ffffff;
+}
+
+button:hover {
+    background: #ffffff;
+    color: #f38f00;
+}
+
+a {
+    text-decoration: none;
+    border-radius: 4px;
+    background: #ffffff;
+    border: 2px solid;
+    line-height: 1;
+    padding: 1em 2em;
+    transition: 0.25s;
+    color: #5da9e9;
+    box-shadow:
+        0.3em 0.3em 0 0 #ffffff,
+        inset 0.3em 0.3em 0 0 #ffffff;
+}
+
+a:hover {
+    background: #ffffff;
+    color: #f38f00;
+}
+section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+input {
+    text-align: start;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    background: #ffffff;
+    border: 2px solid;
+    line-height: 1;
+    padding: 1em 1em;
+    transition: 0.25s;
+    color: #5da9e9;
+    box-shadow:
+    0.3em 0.3em 0 0 #5da9e9,
+    inset 0.3em 0.3em 0 0 #5da9e9;
+}
+
+input:hover {
+    box-shadow:
+    0.3em 0.3em 0 0 #f38f00,
+    inset 0.3em 0.3em 0 0 #f38f00;
+    background: #ffffff;
+    color: #f38f00;
+}
+p{
+    font-size: 1.2em;
+    text-transform: capitalize;
+    text-align: start;
+    margin-left: 5px;
+    color: #003f91;
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 10px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.back {
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.container {
+    padding: 40px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border: 1px solid #5da9e9;
+    margin: 50px 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 720px) {
+    .container {
+        margin: 50px 8%;
+    }
+}

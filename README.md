@@ -1,6 +1,6 @@
 ## Java-from-0-to-master
 
-Here I'm gonna record my progress through my path in JavasScript
+Here I'm gonna record my progress through my path in JavaScript
 
 ## Workshop Nroº 1: Geometric Figures
 
