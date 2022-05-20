@@ -58,31 +58,27 @@ button {
     text-transform: uppercase;
     font-weight: bolder;
     justify-self: center;
-    border-radius: 4px;
-    background: none;
-    border: 2px solid;
-    line-height: 1;
-    margin: 0.5em;
-    padding: 1em 2em;
-    box-shadow:
-        0.3em 0.3em 0 0 #fff,
-        inset 0.3em 0.3em 0 0 #fff;
 }
 
-a {
-    text-decoration: none;
+.iconify-inline{
     border-radius: 4px;
     background: #ffffff;
     border: 2px solid;
     line-height: 1;
-    padding: 1em 2em;
+    padding: 1em 1em;
     transition: 0.25s;
     color: #5da9e9;
+    box-shadow:
+        0.3em 0.3em 0 0 #ffffff,
+        inset 0.3em 0.3em 0 0 #ffffff;
 }
 
-a:hover {
+.iconify-inline:hover {
     background: #ffffff;
     color: #f38f00;
+}
+a {
+    text-decoration: none;
 }
 
 tr:hover {
@@ -255,7 +251,18 @@ tr:hover {
 .center {
     font-weight: lighter;
 }
-
+.button {
+    font-size: 1.5em;
+    border-radius: 4px;
+    background: none;
+    border: 2px solid;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1.5em;
+    box-shadow:
+        0.3em 0.3em 0 0 #fff,
+        inset 0.3em 0.3em 0 0 #fff;
+}
 #save {
     grid-column-start: 1;
     grid-column-end: 5;
