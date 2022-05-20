@@ -6,11 +6,18 @@ body {
     background-size: 100% 100%;
     font-family: 'Oswald', sans-serif;
 }
-
+footer {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    text-align: center;
+    padding: 1em 0;
+}
 h1 {
     text-align: center;
-    margin: 20px 50px;
-    font-size: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;    font-size: 2em;
     font-weight: bolder;
     text-transform: uppercase;
     color: #003F91;
@@ -22,7 +29,7 @@ h2 {
     text-align: center;
     text-transform: uppercase;
     background: #FFFFFF;
-    color: #003f91;
+    color: #5da9e9;
     border-radius: 5px;
 }
 
@@ -103,12 +110,17 @@ p{
     text-transform: capitalize;
     text-align: start;
     margin-left: 5px;
-    color: #003f91;
+    color: #5da9e9;
     display: block;
     margin-block-start: 0;
     margin-block-end: 10px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+}
+.a{
+    padding: 0;
+    border: none;
+    transition: 0s;
 }
 .back {
     text-transform: uppercase;

@@ -3,10 +3,18 @@ body {
     background: #FFFFFF;
     font-family: 'Oswald', sans-serif;
 }
-
+footer {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    text-align: center;
+    padding: 2em 0;
+}
 h1 {
     text-align: center;
-    margin: 20px 50px;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 2em;
     font-size: 2em;
     font-weight: bolder;
     text-transform: uppercase;
@@ -85,7 +93,11 @@ p:hover {
     background: #ffffff;
     color: #f38f00;
 }
-
+.a{
+    padding: 0;
+    border: none;
+    transition: 0s;
+}
 .back {
     text-transform: uppercase;
     font-weight: bolder;

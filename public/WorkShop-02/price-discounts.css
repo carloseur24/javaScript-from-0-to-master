@@ -22,7 +22,9 @@ footer {
 }
 
 h1 {
-    margin: 0 50px;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
     font-size: 2em;
     font-weight: bolder;
     text-transform: uppercase;
@@ -35,7 +37,7 @@ h2 {
     text-transform: capitalize;
     padding: 5px;
     background: #FFFFFF;
-    color: #003f91;
+    color: #5da9e9;
     border-radius: 5px;
 }
 
@@ -51,10 +53,10 @@ button {
     transition: 0.25s;
     margin: 5px;
     box-shadow:
-    0.3em 0.3em 0 0 #ffffff,
-    inset 0.3em 0.3em 0 0 #ffffff;
-background-color: #ffffff;
-color: #003f91;
+        0.3em 0.3em 0 0 #ffffff,
+        inset 0.3em 0.3em 0 0 #ffffff;
+    background-color: #ffffff;
+    color: #5da9e9;
 }
 
 button:hover {
@@ -62,7 +64,7 @@ button:hover {
     box-shadow:
         0.2em 0.2em 0 0 #f38f00,
         inset 0.2em 0.2em 0 0 #f38f00;
-    
+
 }
 
 a {
@@ -73,7 +75,7 @@ a {
     line-height: 1;
     padding: 0.8em 1.8em;
     transition: 0.25s;
-    color: #003f91;
+    color: #5da9e9;
     ;
     box-shadow:
         0.3em 0.3em 0 0 #ffffff,
@@ -89,29 +91,14 @@ input {
     text-transform: uppercase;
     font-weight: bolder;
     text-align: start;
-    border-radius: 4px;
-    border: 2px solid;
-    line-height: 1;
-    padding: 0.8em 1.8em;
-    transition: 0.25s;
-    margin-bottom: 5px;
-    background: #ffffff;
-    color: #003f91;
-}
-
-input:hover {
-    background: none;
-    color: #f38f00;
 }
 
 section {
-    border: 1px solid #003f91;
+    border: 1px solid #5da9e9;
     color: #000000;
     border-radius: 8px;
     margin: 0 27%;
     background-color: #ffffff;
-    box-shadow: -1px -1px 0px rgb(239, 241, 233),
-        1px 1px 0px rgb(27, 27, 27);
     padding: 20px 3em;
 }
 
@@ -124,7 +111,7 @@ section form {
 
 label {
     font-size: 1.2em;
-    color: #003f91;
+    color: #5da9e9;
     border-radius: 3px;
     text-align: center;
     text-transform: uppercase;
@@ -142,44 +129,33 @@ span {
     margin: 50px 0px;
 }
 
-#resultf {
-    font-weight: bolder;
-    display: flex;
-    background-color: rgb(255, 255, 255);
-    border-radius: 3px;
-    padding: 10px;
+.a {
+    padding: 0;
+    border: none;
+    transition: 0s;
 }
 
-#resultf2 {
-    font-weight: bolder;
-    display: flex;
-    background-color: #ffffff;
-    border-radius: 3px;
-    padding: 10px;
+#inputprice, #inputdiscount {
+    border-radius: 4px;
+    border: 2px solid;
+    line-height: 1;
+    padding: 0.8em 1.8em;
+    transition: 0.25s;
+    margin-bottom: 5px;
+    background: #ffffff;
+    color: #5da9e9;
+    box-shadow:
+    0.3em 0.3em 0 0 #5da9e9,
+    inset 0.3em 0.3em 0 0 #5da9e9;
 }
 
-#resultT {
-    color: #003f91;
-    font-size: 80%;
-    margin: 0;
-    align-self: center;
-    text-transform: uppercase;
+#inputprice:hover, #inputdiscount:hover, #inputprice:focus, #inputdiscount:focus {
+    background: none;
+    color: #f38f00;
+    box-shadow:
+    0.3em 0.3em 0 0 #f38f00,
+    inset 0.3em 0.3em 0 0 #f38f00;
 }
-
-#resultC {
-    text-transform: uppercase;
-    text-align: center;
-    color: #003f91;
-}
-
-#result {
-    color: #e4b314;
-    border-radius: 3px;
-    padding: 10px 0px 10px 10px;
-    margin: 0;
-    justify-self: center;
-}
-
 #inputcupon {
     text-transform: capitalize;
     border-radius: 4px;
@@ -189,20 +165,56 @@ span {
     transition: 0.25s;
     margin-bottom: 5px;
     background: #ffffff;
-    color: #003f91;
+    color: #5da9e9;
     box-shadow:
         0.2em 0.2em 0 0 #ffffff,
         inset 0.2em 0.2em 0 0 #ffffff;
 }
 
-#inputcupon:hover {
+#inputcupon:hover, 
+#inputcupon:focus {
     box-shadow:
-    0.1em 0.1em 0 0 #f38f00,
-    inset 0.1em 0.1em 0 0 #f38f00;
+        0.1em 0.1em 0 0 #f38f00,
+        inset 0.1em 0.1em 0 0 #f38f00;
     background: none;
     color: #f38f00;
 }
 
+#resultf {
+    font-weight: bolder;
+    display: flex;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+#resultf2 {
+    font-weight: bolder;
+    display: flex;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+#resultT {
+    color: #5da9e9;
+    font-size: 80%;
+    margin: 0;
+    align-self: center;
+    text-transform: uppercase;
+}
+
+#resultC {
+    text-transform: uppercase;
+    text-align: center;
+    color: #5da9e9;
+}
+
+#result {
+    color: #e4b314;
+    border-radius: 3px;
+    padding: 10px 0px 10px 10px;
+    margin: 0;
+    justify-self: center;
+}
 
 #color {
     color: black;

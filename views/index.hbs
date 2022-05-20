@@ -10,41 +10,62 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <title>Practice Project #1</title>
+    <script src="https://kit.fontawesome.com/b34b5dcd74.js" crossorigin="anonymous"></script>
 </head>
 <header>
     <h1>
-        <span class="span">WELCOME</span> I'M CARLOS AND I WANT TO INTRODUCE YOU MY FIRST COMPLETE PROJECT
+        <a href="/views/index.hbs"><span class="span">WELCOME</span></a> I'M CARLOS AND I WANT TO INTRODUCE YOU MY FIRST
+        COMPLETE PROJECT
+    </h1>
 </header>
-</h1>
 
 <body>
     <div class="container">
-        <h2> Here records this project | path #1 JavaScript</h2>
-        <ul>
-            <p>
-                <li class="tittle">
-                    Workshop Nroº 1: <a href="/WorkShop-01/geometrical-figures.html"> Geometric Figures</a>
-                </li>
-                <li class="tittle">
-                    Workshop Nroº 2: <a href="/WorkShop-02/price-discounts.html">Price and Discounts</a>
-                </li>
-                <li class="tittle">
-                    Workshop Nroº 3: <span class="margin"><a href="/WorkShop-03/average/promedio.html">Mean</a> <a
-                            href="/WorkShop-03/Armonic-mean/armonicMean.html"> Armonic Mean</a> <a
-                            href="/WorkShop-03/median/median.html">Median</a> and <a
-                            href="/WorkShop-03/moda/moda.html">Mode</a></span>
-                </li>
-                <li class="tittle">
-                    Workshop Nroº 4: <a href="/WorkShop-04/salaries.html">Analisis of Salaries</a>
-                </li>
-                <li class="tittle">
-                    Final Project: <a href="/WorkShop-05-Save-Capacity/savings.html">Save Capacity</a>
-                </li>
-                <hr>
-                {{>steps}}
-            </p>
+        <ul class="workshops">
+            <h2> Here records this project | path #1 JavaScript</h2>
+            <li class="tittle">
+                Workshop Nroº 1 <a href="/Geometrical-figures" class="a"><i
+                        class="fa fa-light fa-circle-arrow-right"></i> Geometric Figures</a>
+            </li>
+            <li class="tittle">
+                Workshop Nroº 2 <a href="/Discount-price" class="a"><i
+                        class="fa fa-light fa-circle-arrow-right"></i> Price and Discounts</a>
+            </li>
+            <li class="tittle">
+                <div class="margin1">
+                    <span>
+                        <p>Workshop Nroº 3</p>
+                    </span>
+                    <span class="margin">
+                        <a href="/Mean" class="a1 a">
+                            <i class="fa fa-light fa-circle-arrow-right"></i> Mean</a>
+                        <a href="/Armonic-mean" class="a2 a font">
+                            <i class="fa fa-light fa-circle-arrow-right"></i> Armonic Mean</style></a>
+                        <a href="/Median" class="a3 a">
+                            <i class="fa fa-light fa-circle-arrow-right"></i> Median</a>
+                        <a href="/Moda" class="a4 a"><i
+                                class="fa fa-light fa-circle-arrow-right"></i>
+                            Mode</a>
+                    </span>
+                </div>
+            </li>
+            <li class="tittle">
+                Workshop Nroº 4 <a href="/Salaries" class="a"><i
+                        class="fa fa-light fa-circle-arrow-right"></i>
+                    Analisis of Salaries</a>
+            </li>
+            <li class="tittle">
+                Final Project <a href="/Savings" class="a"><i
+                        class="fa fa-light fa-circle-arrow-right"></i> Save Capacity</a>
+            </li>
+
+        </ul>
+        <ul class="steps">
+            {{>steps}}
+        </ul>
         </ul>
     </div>
+    <hr>
     <footer>All Rights Reserved in 2022. Author Carlos Uzcategui</footer>
 </body>
 

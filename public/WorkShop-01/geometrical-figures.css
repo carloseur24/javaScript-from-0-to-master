@@ -22,7 +22,9 @@ footer {
 }
 
 h1 {
-    margin: 0 50px;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
     font-size: 2em;
     font-weight: bolder;
     text-transform: uppercase;
@@ -35,7 +37,7 @@ h2 {
     text-transform: uppercase;
     padding: 5px;
     background: #FFFFFF;
-    color: #003f91;
+    color: #5da9e9;
     border-radius: 5px;
 }
 
@@ -120,7 +122,11 @@ input:hover {
 form {
     padding: 2em 1.8em;
 }
-
+.a{
+    padding: 0;
+    border: none;
+    transition: 0s;
+}
 .tittle {
     margin: 0;
     padding: 10px;
@@ -139,8 +145,8 @@ form {
 .input {
     background-color: #5da9e9;
     color: #000000;
-    box-shadow: 1px 1px rgba(0, 0, 0, 0.637);
-    border-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     display: flex;
     flex-direction: column;
     gap: 10px;

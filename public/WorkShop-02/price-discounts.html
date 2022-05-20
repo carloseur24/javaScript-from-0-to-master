@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./price-discounts.css">
+    <link rel="stylesheet" href="/public/WorkShop-02/price-discounts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
@@ -14,7 +14,8 @@
 
 <body>
     <header>
-        <h1> <span>Welcome</span> This is a WEB about calculate DISCOUNTS on any amount</h1>
+        <h1> <a href="/" class="a"><span class="span">WELCOME</span></a> This is a WEB about calculate DISCOUNTS on any
+            amount</h1>
     </header>
     <section>
         <form>
@@ -23,8 +24,8 @@
             <label for="inputdiscount">enter a number into 0-100%</label>
             <input type="number" name="" id="inputdiscount" style="width: 5em;" placeholder="%">
             <label for="inputcupon" id="labelcupon"></label>
-            
-            <select id="inputcupon" ></select>
+
+            <select id="inputcupon"></select>
 
             <button type="button" onclick="onbuttonresult()">get your discount</button>
             <div id="resultf">
@@ -36,8 +37,10 @@
             </div>
         </form>
     </section>
-    <div class="back"><a href="/views/index.hbs">back</a></div>
+    <div class="back"><a href="/">back</a></div>
+    <hr>
+    <footer>All Rights Reserved in 2022. Author Carlos Uzcategui</footer>
 </body>
-<script src="./price-discounts.js"></script>
+<script src="/public/WorkShop-02/price-discounts.js"></script>
 
 </html>

@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const { handle } = require('../hbs');
+const cors = require("cors");
 
 class Server {
     constructor() {
@@ -10,11 +11,13 @@ class Server {
         this.middlewares()
         this.hbs()
         this.render()
+        this.routes()
     }
     async hbs(){
         await handle()
     }
     middlewares() {
+        this.app.use(cors())
         this.app.use(express.json())
         this.app.use(express.static('public'))
     }
@@ -30,6 +33,9 @@ class Server {
         this.app.listen(this.port, () => {
             console.log(`app listening on port  ${this.port}`);
         })
+    }
+    routes(){
+        this.app.use(require('../routes'))
     }
 }
 

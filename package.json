@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/carloseur24/java-from-0-to-master#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "hbs": "^4.2.0",
