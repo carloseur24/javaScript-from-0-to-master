@@ -1,4 +1,10 @@
+let i =0;
 const generator = () => {
+    i++
+    console.log(i)
+    if (i==2){
+        return window.location.reload()
+    }
     const numbers = document.querySelector('#input').value;
     const split = numbers.split(' ')
     if (split.length < 3) {
