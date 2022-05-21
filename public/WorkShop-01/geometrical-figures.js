@@ -61,8 +61,7 @@ const calculateAreaTriangle = () => {
         const result = area3(parseInt(value1[0]), parseInt(value1[0]), parseInt(value1[0]));
         validate(value1, result, "#i2");
     } else {
-        const result = area3(parseInt(value1[0]), parseInt(value1[1]), parseInt(value1[2]));
-        validate(value1, result, "#i2");
+        alersweetspecial()
     }
 }
 const calculatePerimeterCircle = () => {

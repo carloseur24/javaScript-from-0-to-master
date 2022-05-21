@@ -117,7 +117,13 @@ input:focus {
 form {
     padding: 2em 1.8em;
 }
-
+.swal-button{
+    background-color: #e4b314;
+}
+.swal-button:hover{
+    background-color: #e4b314;
+    color: #fff;
+}
 .hidden {
     display: none;
 }

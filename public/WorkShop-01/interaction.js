@@ -8,6 +8,11 @@ const alersweet2 = () => {
         button: ["OK"]
     });
 }
+const alersweetspecial = ()=>{
+    return swal(`Follow me: n1 = height and n2 = base`, {
+        button: {text: "Understan"}
+    });
+}
 const listeningC = () => {
     const input = document.querySelector("#InputCircle");
     const button = document.querySelector(".circlea");
