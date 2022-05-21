@@ -1,6 +1,7 @@
 body {
     background: #FFFFFF;
     font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
 }
 
 header,
@@ -66,7 +67,29 @@ button:hover {
         inset 0.2em 0.2em 0 0 #f38f00;
 
 }
+.hidden {
+    display: none;
+}
 
+.back-to-top {
+    border-radius: 5px;
+    padding: 4px 12px;
+    font-size: 1em;
+    color: #f8f8f8;
+    background-color: #5da9e9;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    box-shadow: none
+}
+
+.back-to-top:hover {
+
+    background-color: #e4b314;
+    color: #ffffff;
+    border: none;
+    box-shadow: none
+}
 .iconify-inline{
     border-radius: 4px;
     background: #ffffff;

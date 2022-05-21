@@ -1,13 +1,3 @@
-// perímetro del cuadrado = b*4
-// área del cuadrado = l*l
-// ====================
-// perimeter del triangule = l+l+l
-// area del triangule = (b*a)/2
-// ======================
-// perímetro del circulo = diámetro * PI
-// área de un circulo = radio *radio * PI
-// ======================
-
 const calculatePerimeterSquare = () => {
     const input = document.getElementById('InputSquare')
     const value = input.value;
@@ -81,7 +71,9 @@ const calculatePerimeterCircle = () => {
     const value = input.value;
     const value1 = [value]
     const perimeter = cperimeter(value);
-    validate(value1, perimeter, "#i3");
+    const calc = parseInt(perimeter)
+    const result = toPrecision(calc);
+    validate(value1, result, "#i3");
 }
 const calculateAreaCircle = () => {
     const input = document.querySelector("#InputCircle");
@@ -89,5 +81,18 @@ const calculateAreaCircle = () => {
     const value = input.value;
     const value1 = [value]
     const area = carea(value);
-    validate(value1, area, "#i3");
+    const calc = parseInt(area)
+    const result = toPrecision(calc);
+    validate(value1, result, "#i3");
 }
+
+// fomulas
+// perímetro del cuadrado = b*4
+// área del cuadrado = l*l
+// ====================
+// perimeter del triangule = l+l+l
+// area del triangule = (b*a)/2
+// ======================
+// perímetro del circulo = diámetro * PI
+// área de un circulo = radio *radio * PI
+// ======================

@@ -1,7 +1,11 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     background: #FFFFFF;
     font-family: 'Oswald', sans-serif;
+    
 }
 footer {
     background-repeat: no-repeat;
@@ -70,10 +74,6 @@ button:hover {
         inset 0.3em 0.3em 0 0 #ffffff;
 }
 
-.iconify-inline:hover {
-    background: #ffffff;
-    color: #f38f00;
-}
 a {
     text-decoration: none;
 }
@@ -95,6 +95,29 @@ p:hover {
     background: #ffffff;
     color: #f38f00;
 }
+.hidden {
+    display: none;
+}
+
+.back-to-top {
+    border-radius: 5px;
+    padding: 4px 12px;
+    font-size: 1em;
+    color: #f8f8f8;
+    background-color: #5da9e9;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    box-shadow: none
+}
+
+.back-to-top:hover {
+
+    background-color: #e4b314;
+    color: #ffffff;
+    border: none;
+    box-shadow: none
+}
 .a{
     padding: 0;
     border: none;
@@ -107,6 +130,10 @@ p:hover {
     margin: 50px 0;
 }
 
+.iconify-inline:hover {
+    background: #ffffff;
+    color: #f38f00;
+}
 .container {
     padding: 40px;
     border-bottom-right-radius: 10px;

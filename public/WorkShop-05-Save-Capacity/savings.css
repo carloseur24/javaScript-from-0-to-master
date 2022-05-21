@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     background: #fff;
     font-family: 'Oswald', sans-serif;
@@ -247,7 +250,29 @@ tr:hover {
     border-right: 1px solid #5da9e9;
     padding: 0.5em 1em;
 }
+.hidden {
+    display: none;
+}
 
+.back-to-top {
+    border-radius: 5px;
+    padding: 4px 12px;
+    font-size: 1em;
+    color: #f8f8f8;
+    background-color: #5da9e9;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    box-shadow: none
+}
+
+.back-to-top:hover {
+
+    background-color: #e4b314;
+    color: #ffffff;
+    border: none;
+    box-shadow: none
+}
 .center {
     font-weight: lighter;
 }

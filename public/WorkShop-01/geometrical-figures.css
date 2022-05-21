@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #FFFFFF;
     font-family: 'Oswald', sans-serif;
@@ -79,25 +83,12 @@ button:hover {
     color: #5da9e9;
 }
 
-.iconify-inline {
-    border-radius: 4px;
-    background: #ffffff;
-    border: 2px solid;
-    line-height: 1;
-    padding: 1em 1em;
-    transition: 0.25s;
-    color: #5da9e9;
-    box-shadow:
-        0.3em 0.3em 0 0 #ffffff,
-        inset 0.3em 0.3em 0 0 #ffffff;
-}
 
 a {
     text-decoration: none;
 }
 
 input {
-    text-transform: uppercase;
     font-weight: bolder;
     text-align: center;
     border-radius: 4px;
@@ -118,13 +109,50 @@ input:hover {
     color: #ffffff;
 }
 
-input:focus{
+input:focus {
     background: none;
     color: #ffffff;
 }
 
 form {
     padding: 2em 1.8em;
+}
+
+.hidden {
+    display: none;
+}
+
+.back-to-top {
+    border-radius: 5px;
+    padding: 4px 12px;
+    font-size: 1em;
+    color: #f8f8f8;
+    background-color: #5da9e9;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    box-shadow: none
+}
+
+.back-to-top:hover {
+
+    background-color: #e4b314;
+    color: #ffffff;
+    border: none;
+    box-shadow: none
+}
+
+.iconify-inline {
+    border-radius: 4px;
+    background: #ffffff;
+    border: 2px solid;
+    line-height: 1;
+    padding: 1em 1em;
+    transition: 0.25s;
+    color: #5da9e9;
+    box-shadow:
+        0.3em 0.3em 0 0 #ffffff,
+        inset 0.3em 0.3em 0 0 #ffffff;
 }
 
 .swal-modal {
@@ -160,6 +188,7 @@ form {
 }
 
 .container {
+    overflow-x: hidden;
     margin: 0 25%;
     display: flex;
     flex-direction: column;

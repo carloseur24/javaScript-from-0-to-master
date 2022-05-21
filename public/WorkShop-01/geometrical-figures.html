@@ -9,15 +9,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
-    <link rel="import" href="/public/imports.js"></link>
+    <link rel="import" href="/public/imports.js">
+    </link>
     <script src="https://kit.fontawesome.com/b34b5dcd74.js" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
     <title>Geometrical Figures</title>
 </head>
 
-<body>
+<body id="scroll">
     <header>
 
         <h1>
@@ -33,7 +36,7 @@
                     Enter the length of each side of your Square
                 </label>
                 <div class='center'>
-                    <input id="InputSquare" type="text" onkeyup="listeningS()" placeholder="ex: 1 1 1 1 or 1">
+                    <input id="InputSquare" type="text" onkeyup="listeningS()" placeholder="Ex: 1 1 1 1 or 1">
                 </div>
                 <div class="div">
                     <button class="squarea" type='button' onclick="calculatePerimeterSquare()" disabled>
@@ -50,7 +53,7 @@
                     Enter the length of each side of your triangle
                 </label>
                 <div class="center2">
-                    <input id="InputTrianglea" type="text" onkeyup="listeningT()" placeholder="ex: 1 1 1 or 1">
+                    <input id="InputTrianglea" type="text" onkeyup="listeningT()" placeholder="Ex: 1 1 1 or 1">
                 </div>
                 <div class="div">
                     <button class="trianglea" type="button" onclick="calculatePerimeterTriangle()" disabled>
@@ -67,7 +70,7 @@
                     Enter the radius of your Circle
                 </label>
                 <div class="center">
-                    <input id='InputCircle' type="number" onkeyup="listeningC()">
+                    <input id='InputCircle' type="number" onkeyup="listeningC()" placeholder="A Number">
                 </div>
                 <div class="div">
                     <button class="circlea" id='1' type="button" onclick="calculatePerimeterCircle()" disabled>
@@ -78,10 +81,12 @@
         </section>
 
     </div>
-    
-    <div class="back"><a href="/"><span class="iconify-inline" data-icon="bx:arrow-to-left" data-width="30" data-flip="vertical"></span></a></div>
+    <a href="#scroll" class="back-to-top hiden a." name="button"><i class="fa fa-light fa-angle-up"></i></a>
+    <div class="back"><a href="/"><span class="iconify-inline" data-icon="bx:arrow-to-left" data-width="30"
+                data-flip="vertical"></span></a></div>
     <hr>
     <footer>All Rights Reserved in 2022. Author Carlos Uzcategui</footer>
+    <script src="/public/WorkShop-01/fomulas.js"></script>
     <script src="/public/WorkShop-01/interaction.js"></script>
     <script src="/public/WorkShop-01/geometrical-figures.js"></script>
 </body>

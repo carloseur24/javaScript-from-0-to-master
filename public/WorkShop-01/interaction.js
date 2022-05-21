@@ -8,126 +8,6 @@ const alersweet2 = () => {
         button: ["OK"]
     });
 }
-const sperimeter = (side) => {
-    if (side.length == 1) {
-        return parseInt(side[0]) * 4 + ' cm';
-    } else if (side.length > 1 && side.length < 4) {
-        alersweet1()
-    } else if (side[0] !== side[3]) {
-        alersweet2()
-    } else {
-        return (parseInt(side[0]) + parseInt(side[1]) + parseInt(side[2]) + parseInt(side[3])) + ' cm';
-    }
-}
-const areasquare = (side) => {
-    if (side.length == 1) {
-        return (parseInt(side[0]) * parseInt(side[0])) + ' cm^2';
-    } else if (side.length > 1 && side.length < 4) {
-        alersweet1()
-    } else if (side[0] !== side[3]) {
-        alersweet2()
-    } else {
-        return (parseInt(side[0]) * parseInt(side[0])) + ' cm^2';
-    }
-}
-const tperimeter = (l1triangle, l2triangle, btriangle) => {
-    return l1triangle + l2triangle + btriangle + ' cm'
-}; //perimeter
-const area3 = (a, b, c) => {
-    const l1 = (a + b + c);
-    const l2 = (-a + b + c);
-    const l3 = (a - b + c);
-    const l4 = (a + b - c);
-    const lr = l1 * l2 * l3 * l4;
-    const rlr = Math.sqrt(lr)
-    const calc = 0.25 * rlr;
-    if (calc < 1) {
-        const calcp = calc.toPrecision(2);
-        return calcp + ""
-    } else if (calc <= 9) {
-        const calcp = calc.toPrecision(3);
-        return calcp + ""
-    } else if (calc <= 99) {
-        const calcp = calc.toPrecision(4);
-        return calcp + ""
-    } else {
-        const calcp = calc.toPrecision(6);
-        return calcp + ""
-    }
-}
-const area2 = (a, b) => {
-    const ab = (b * a)
-    const dec = 0.5
-    const calc = ab * dec
-    if (calc <= 9) {
-        const calcp = calc.toPrecision(3);
-        return calcp + ""
-    } else if (calc <= 99) {
-        const calcp = calc.toPrecision(4);
-        return calcp + ""
-    } else {
-        const calcp = calc.toPrecision(6);
-        return calcp + ""
-    }
-}
-//area
-// const tperimeter = (btriangle, height) => {
-//     return (btriangle * height) / 2 + ' cm^2'
-// };
-// const noheight = (a, b, c) => {
-//     const btriangle = c;
-//     const s = (a + b + c) / 2;
-//     const desfragmenting = (s * (s - a) * (s - b) * (s - c))
-//     if (desfragmenting <= 0) {
-//         swal ('Its imposive get a root of negative number try other numbers',{
-//             buttons:['']
-//         });
-//     } else {
-//         const height = (Math.sqrt(desfragmenting)) / (btriangle) * 1 / 2;
-//         const type = triangles(a, b, c)
-//         return 'Heigth of your triangle is ' + height + ' and ' + type;
-//     }
-// };
-// const theight = (lAg, lBg, lb) => {
-// if (lAg != lBg) {
-//     swal('Its imposive get a root of negative number try other numbers',{
-//         buttons:['']
-//     });
-// }
-// if (!lAg, lBg, lb) {
-//     return null
-// } else {
-//         let lAp;
-//         const lBp = lb / 2;
-//         const lbp = lAg;
-//         lAp = Math.sqrt((lbp ** 2) - (lBp ** 2))
-//         return lAp;
-//     // }
-// }
-// const triangles = (a, b, c) => {
-//     if (a == b && a != c || a == c && a != b) {
-//         return 'Your triangle is Isoceles'
-//     } else if (a == b && a == c) {
-//         return 'Your triangle is Equilatero'
-//     } else {
-//         return 'Your triangle is Escaleno'
-//     }
-// }
-const isoceles = (a, b, c) => {
-    return theight(a, b, c)
-}
-const PI = Math.PI;
-const diameter = (radio) => {
-    return radio * 2;
-}
-const cperimeter = (radio) => {
-    const diam = diameter(radio)
-    return diam * PI + ' cm'
-};
-const carea = (radio) => {
-    return (radio * radio) * PI + ' cm^2';
-}
-
 const listeningC = () => {
     const input = document.querySelector("#InputCircle");
     const button = document.querySelector(".circlea");
@@ -161,7 +41,6 @@ const listeningS = () => {
     actives(buttonb, input);
     avoids(field)
 }
-
 const textInsert = (result, id = '') => {
     const squeretext = document.querySelector(id);
     const table = document.createElement('div')
@@ -244,3 +123,76 @@ const avoids = (field) => {
         div.parentNode.removeChild(div);
     }
 }
+const toPrecision = (calc) => {
+    if (calc < 1) {
+        const calcp = calc.toPrecision(2);
+        return calcp + ""
+    } else if (calc <= 9) {
+        const calcp = calc.toPrecision(3);
+        return calcp + ""
+    } else if (calc <= 99) {
+        const calcp = calc.toPrecision(4);
+        return calcp + ""
+    } else {
+        const calcp = calc.toPrecision(6);
+        return calcp + ""
+    }
+}
+const showOnPx = 100;
+const backToTopButton = document.querySelector(".back-to-top")
+
+const scrollContainer = () => {
+    return document.documentElement || document.body;
+};
+
+document.addEventListener("scroll", () => {
+    if (scrollContainer().scrollTop > showOnPx) {
+        backToTopButton.classList.remove("hidden")
+    } else {
+        backToTopButton.classList.add("hidden")
+    }
+})
+// old code 
+//area
+// const tperimeter = (btriangle, height) => {
+//     return (btriangle * height) / 2 + ' cm^2'
+// };
+// const noheight = (a, b, c) => {
+//     const btriangle = c;
+//     const s = (a + b + c) / 2;
+//     const desfragmenting = (s * (s - a) * (s - b) * (s - c))
+//     if (desfragmenting <= 0) {
+//         swal ('Its imposive get a root of negative number try other numbers',{
+//             buttons:['']
+//         });
+//     } else {
+//         const height = (Math.sqrt(desfragmenting)) / (btriangle) * 1 / 2;
+//         const type = triangles(a, b, c)
+//         return 'Heigth of your triangle is ' + height + ' and ' + type;
+//     }
+// };
+// const theight = (lAg, lBg, lb) => {
+// if (lAg != lBg) {
+//     swal('Its imposive get a root of negative number try other numbers',{
+//         buttons:['']
+//     });
+// }
+// if (!lAg, lBg, lb) {
+//     return null
+// } else {
+//         let lAp;
+//         const lBp = lb / 2;
+//         const lbp = lAg;
+//         lAp = Math.sqrt((lbp ** 2) - (lBp ** 2))
+//         return lAp;
+//     // }
+// }
+// const triangles = (a, b, c) => {
+//     if (a == b && a != c || a == c && a != b) {
+//         return 'Your triangle is Isoceles'
+//     } else if (a == b && a == c) {
+//         return 'Your triangle is Equilatero'
+//     } else {
+//         return 'Your triangle is Escaleno'
+//     }
+// }
