@@ -73,11 +73,13 @@ button {
         inset 0.3em 0.3em 0 0 #ffffff;
 }
 
+
 button:hover {
     background-color: #ffffff;
     color: #5da9e9;
 }
-.iconify-inline{
+
+.iconify-inline {
     border-radius: 4px;
     background: #ffffff;
     border: 2px solid;
@@ -90,10 +92,6 @@ button:hover {
         inset 0.3em 0.3em 0 0 #ffffff;
 }
 
-.iconify-inline:hover {
-    background: #ffffff;
-    color: #f38f00;
-}
 a {
     text-decoration: none;
 }
@@ -120,14 +118,39 @@ input:hover {
     color: #ffffff;
 }
 
+input:focus{
+    background: none;
+    color: #ffffff;
+}
+
 form {
     padding: 2em 1.8em;
 }
-.a{
+
+.swal-modal {
+    background-color: #ffffff;
+    width: 300px;
+    text-transform: uppercase;
+}
+
+.swal-text {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    color: #e4b314;
+}
+
+.iconify-inline:hover {
+    background: #ffffff;
+    color: #f38f00;
+}
+
+.a {
     padding: 0;
     border: none;
     transition: 0s;
 }
+
 .tittle {
     margin: 0;
     padding: 10px;
@@ -182,6 +205,7 @@ form {
     flex-direction: column;
     align-items: center;
 }
+
 .back {
     text-transform: uppercase;
     font-weight: bolder;
@@ -201,8 +225,9 @@ form {
     transition: 0.25s;
     color: #5da9e9;
     box-shadow:
-    0.3em 0.3em 0 0 #ffffff,
+        0.3em 0.3em 0 0 #ffffff,
 }
+
 .result:hover {
     color: #000000;
 }
@@ -210,31 +235,37 @@ form {
 .p1 {
     margin: 0;
 }
+
 .circlea:disabled {
     background-color: #fff;
     color: #ccc;
     border: 1px solid #ccc;
 }
+
 .circleb:disabled {
     background-color: #fff;
     color: #ccc;
     border: 1px solid #ccc;
 }
+
 .trianglea:disabled {
     background-color: #fff;
     color: #ccc;
     border: 1px solid #ccc;
 }
+
 .triangleb:disabled {
     background-color: #fff;
     color: #ccc;
     border: 1px solid #ccc;
 }
+
 .squarea:disabled {
     background-color: #fff;
     color: #ccc;
     border: 1px solid #ccc;
 }
+
 .squareb:disabled {
     background-color: #fff;
     color: #ccc;

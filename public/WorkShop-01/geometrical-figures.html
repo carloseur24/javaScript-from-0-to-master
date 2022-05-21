@@ -9,8 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="import" href="/public/imports.js"></link>
     <script src="https://kit.fontawesome.com/b34b5dcd74.js" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <title>Geometrical Figures</title>
 </head>
 
@@ -30,7 +33,7 @@
                     Enter the length of each side of your Square
                 </label>
                 <div class='center'>
-                    <input id="InputSquare" type="number" onkeyup="listeningS()">
+                    <input id="InputSquare" type="text" onkeyup="listeningS()" placeholder="ex: 1 1 1 1 or 1">
                 </div>
                 <div class="div">
                     <button class="squarea" type='button' onclick="calculatePerimeterSquare()" disabled>
@@ -47,9 +50,7 @@
                     Enter the length of each side of your triangle
                 </label>
                 <div class="center2">
-                    <input id="InputTrianglea" type="number">
-                    <input id="InputTriangleb" type="number">
-                    <input id="InputTrianglec" type="number" onkeyup="listeningT()">
+                    <input id="InputTrianglea" type="text" onkeyup="listeningT()" placeholder="ex: 1 1 1 or 1">
                 </div>
                 <div class="div">
                     <button class="trianglea" type="button" onclick="calculatePerimeterTriangle()" disabled>
