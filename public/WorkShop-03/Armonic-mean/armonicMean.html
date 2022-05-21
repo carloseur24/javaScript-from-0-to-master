@@ -17,25 +17,34 @@
 
 <body>
     <header>
-        <h1><a href="/" class="a"><span class="span">WELCOME</span></a> let's to Show how you to calculate Armonic Mean</h1>
+        <h1><a href="/" class="a"><span class="span">WELCOME</span></a> let's to Show how you to calculate Armonic Mean
+        </h1>
     </header>
     <div class="container">
         <section class="input">
             <h2>here you have to enter a list of numbers to get a result</h2>
-            <div>
-                <p>enter the length of your list</p>
-                <input type="number" placeholder="only numbers ;)">
+            <div class="flex">
+                <p>length</p>
+                <p>and </p>
+                <p>enter your list</p>
             </div>
-            <div>
-                <p>enter numbers for your list</p>
-                <input type="number" placeholder="only numbers ;)">
+            <div class="flex2">
+                <select id="select" type="number" placeholder="Any amount"></select>
+                <input id="input" type="text" placeholder="Ex: 1 1 1 1">
             </div>
         </section>
-        <button id='event' class="button" type="button" onclick="generator()"><i class="fa fa-duotone fa-arrows-rotate"></i></button>
+        <button id='event' class="button" type="button" onclick="generator()"><i
+                class="fa fa-duotone fa-arrows-rotate"></i></button>
+        <p class="result"></p>
     </div>
-    <div class="back"><a href="/"><span class="iconify-inline" data-icon="bx:arrow-to-left" data-width="30" data-flip="vertical"></a></div>
+    <div class="back"><a href="/"><span class="iconify-inline" data-icon="bx:arrow-to-left" data-width="30"
+                data-flip="vertical"></a></div>
     <hr>
     <footer>All Rights Reserved in 2022. Author Carlos Uzcategui</footer>
+
+
+    <script src="/public/bundle.js"></script>
+    <script src="/public/WorkShop-03/Armonic-mean/forms.js"></script>
     <script src="/public/WorkShop-03/Armonic-mean/armonicMean.js"></script>
 </body>
 

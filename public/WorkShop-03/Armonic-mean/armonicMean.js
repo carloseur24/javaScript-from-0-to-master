@@ -1,41 +1,25 @@
-let list1 = [];
-let list = [];
-
-const sort = (array) => {
-    return array.sort((a, b) => a - b);
-}
-const listing = (listt) => {
-    for (let i = 0; i < listt.length; i++) {
-        const result = 1 / listt[i];
-        list.push(result)
-        console.log(result + 'index #' + i)
+const generator = () => {
+    const numbers = document.querySelector('#input').value;
+    const split = numbers.split(' ')
+    if (split.length < 3) {
+        swal('Enter your list', {
+            buttons: ['']
+        })
+        return false
     }
-}
-const armonicMean = (listt = []) => {
-    listing(list1)
-    const sumresults = list.reduce((total, amount) => total + amount)
-    const armonicMean = list.length / sumresults;
-    const round = Math.round(armonicMean * 100) / 100;
-    console.log(sumresults)
-    console.log(armonicMean)
-    console.log(list1)
-    console.log(list)
-    alert(`Your list is ${sort(listt)}\nYour Armonic mean is ${round}`)
-}
-const generator = (list = list1) => {
-    let i = 0;
-    let inputValues;
-    let inputValue = prompt('Enter how many values do you want to use (I recomend at least enter 5 numbers): ')
-    if (parseInt(inputValue) >= 5) {
-        do {
-            inputValues = prompt('Input ' + inputValue + ' values to calculate it: ')
-            list.push(parseInt(inputValues))
-            i++;
-        } while (i < inputValue)
-        armonicMean(list1)
-        window.location.reload()
+    if (split.length > (parseInt(option.value))) {
+        swal('The length of your list is different that your selected', {
+            buttons: ['']
+        })
+    } else if (split.length< (parseInt(option.value))) {
+        swal('The length of your list is different that your selected', {
+            buttons: ['']
+        })
     } else {
-        alert('Please enter more than 5 numbers')
-        alert('try again')
+        const result = armonicMean(split)
+        const options = document.querySelector('.result')
+        const text = document.createTextNode(result)
+        options.appendChild(text);
     }
+
 }
