@@ -1,11 +1,11 @@
-let i =0;
+let i = 0;
 const generator = () => {
+    const numbers = document.querySelector('#input').value;
+    const split = numbers.split(' ')
     console.log(i)
     if (i==1){
         return window.location.reload()
     }
-    const numbers = document.querySelector('#input').value;
-    const split = numbers.split(' ')
     if (split.length < 3) {
         swal('Enter your list', {
             buttons: ['']
@@ -21,11 +21,11 @@ const generator = () => {
             buttons: ['']
         })
     } else {
-        const result = armonicMean(split)
+        const result = aritmeticMean(split)
         const options = document.querySelector('.result')
         const text = document.createTextNode(result)
         options.appendChild(text);
         i++
     }
-
 }
+

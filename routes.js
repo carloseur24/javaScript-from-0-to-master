@@ -17,7 +17,7 @@ const price = (req, res=response) => {
     res.sendFile(__dirname+'/public/WorkShop-02/price-discounts.html')
 }
 const mean = (req, res=response) => {
-    res.sendFile(__dirname+'/public/WorkShop-03/average/promedio.html')
+    res.sendFile(__dirname+'/public/WorkShop-03/mean/mean.html')
 }
 const armonicmean = (req, res=response) => {
     res.sendFile(__dirname+'/public/WorkShop-03/Armonic-mean/armonicMean.html')
@@ -25,8 +25,8 @@ const armonicmean = (req, res=response) => {
 const median = (req, res=response) => {
     res.sendFile(__dirname+'/public/WorkShop-03/median/median.html')
 }
-const moda = (req, res=response) => {
-    res.sendFile(__dirname+'/public/WorkShop-03/moda/moda.html')
+const mode = (req, res=response) => {
+    res.sendFile(__dirname+'/public/WorkShop-03/mode/mode.html')
 }
 const salaries = (req, res=response) => {
     res.sendFile(__dirname+'/public/WorkShop-04/salaries.html')
@@ -40,10 +40,10 @@ app.use('/public',express.static(path.join(__dirname,'/public')));
 app.get('/index', index)
 app.get('/Geometrical-figures', geometrical)
 app.get('/Discount-price', price)
-app.get('/Mean', mean)
+app.get('/Aritmetic-Mean', mean)
 app.get('/Armonic-mean', armonicmean)
 app.get('/Median', median)
-app.get('/Moda', moda)
+app.get('/Mode', mode)
 app.get('/Salaries', salaries)
 app.get('/Savings', savings)
 // app.use(express.static())geo
