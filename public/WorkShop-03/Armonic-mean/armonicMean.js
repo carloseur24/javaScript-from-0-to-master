@@ -1,9 +1,4 @@
-let i =0;
 const generator = () => {
-    console.log(i)
-    if (i==1){
-        return window.location.reload()
-    }
     const numbers = document.querySelector('#input').value;
     const split = numbers.split(' ')
     if (split.length < 3) {
@@ -16,16 +11,18 @@ const generator = () => {
         swal('The length of your list is different that your selected', {
             buttons: ['']
         })
-    } else if (split.length< (parseInt(option.value))) {
+    } else if (split.length < (parseInt(option.value))) {
         swal('The length of your list is different that your selected', {
             buttons: ['']
         })
     } else {
         const result = armonicMean(split)
         const options = document.querySelector('.result')
+        const parraph = document.createElement('p')
+        parraph.setAttribute('id','result')
+        options.appendChild(parraph)
         const text = document.createTextNode(result)
-        options.appendChild(text);
-        i++
+        parraph.appendChild(text);
     }
 
 }

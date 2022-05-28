@@ -6,6 +6,7 @@ body {
     background-size: 100% 100%;
     font-family: 'Oswald', sans-serif;
 }
+
 footer {
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -13,6 +14,7 @@ footer {
     text-align: center;
     padding: 1em 0;
 }
+
 h1 {
     text-align: center;
     margin-left: 1em;
@@ -53,12 +55,14 @@ button:hover {
 a {
     text-decoration: none;
 }
-section{
+
+section {
     align-items: center;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
+
 input {
     text-align: start;
     text-transform: uppercase;
@@ -71,17 +75,18 @@ input {
     transition: 0.25s;
     color: #5da9e9;
     box-shadow:
-    0.3em 0.3em 0 0 #5da9e9,
-    inset 0.3em 0.3em 0 0 #5da9e9;
+        0.3em 0.3em 0 0 #5da9e9,
+        inset 0.3em 0.3em 0 0 #5da9e9;
 }
 
 input:hover {
     box-shadow:
-    0.3em 0.3em 0 0 #f38f00,
-    inset 0.3em 0.3em 0 0 #f38f00;
+        0.3em 0.3em 0 0 #f38f00,
+        inset 0.3em 0.3em 0 0 #f38f00;
     background: #ffffff;
     color: #f38f00;
 }
+
 select {
     text-align: start;
     text-transform: uppercase;
@@ -94,17 +99,19 @@ select {
     transition: 0.25s;
     color: #5da9e9;
     box-shadow:
-    0.3em 0.3em 0 0 #5da9e9,
-    inset 0.3em 0.3em 0 0 #5da9e9;
+        0.3em 0.3em 0 0 #5da9e9,
+        inset 0.3em 0.3em 0 0 #5da9e9;
 }
+
 select:hover {
     box-shadow:
-    0.3em 0.3em 0 0 #f38f00,
-    inset 0.3em 0.3em 0 0 #f38f00;
+        0.3em 0.3em 0 0 #f38f00,
+        inset 0.3em 0.3em 0 0 #f38f00;
     background: #ffffff;
     color: #f38f00;
 }
-p{
+
+p {
     font-size: 1.2em;
     text-transform: capitalize;
     text-align: start;
@@ -115,16 +122,19 @@ p{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-.flex{
+
+.flex {
     display: inline-flex;
     flex-direction: row;
     gap: 20px;
 }
-.flex2{
+
+.flex2 {
     display: inline-flex;
     flex-direction: row;
 }
-.iconify-inline{
+
+.iconify-inline {
     border-radius: 4px;
     background: #ffffff;
     border: 2px solid;
@@ -141,18 +151,21 @@ p{
     background: #ffffff;
     color: #f38f00;
 }
-.a{
+
+.a {
     padding: 0;
     border: none;
     transition: 0s;
 }
+
 .back {
     text-transform: uppercase;
     font-weight: bolder;
     text-align: center;
     margin: 50px 0;
 }
-.button{
+
+.button {
     border-radius: 4px;
     background: #ffffff;
     border: 2px solid;
@@ -165,6 +178,7 @@ p{
         0.3em 0.3em 0 0 #ffffff,
         inset 0.3em 0.3em 0 0 #ffffff;
 }
+
 .container {
     padding: 30px;
     border-bottom-right-radius: 10px;
@@ -175,6 +189,13 @@ p{
     flex-direction: column;
     gap: 20px;
 }
+
+#event:disabled {
+    background-color: #fff;
+    color: #ccc;
+    border: 1px solid #ccc;
+}
+
 @media (max-width: 720px) {
     .container {
         margin: 50px 8%;

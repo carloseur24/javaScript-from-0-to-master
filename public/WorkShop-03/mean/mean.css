@@ -178,6 +178,11 @@ p{
     flex-direction: column;
     gap: 20px;
 }
+#event:disabled {
+    background-color: #fff;
+    color: #ccc;
+    border: 1px solid #ccc;
+}
 @media (max-width: 720px) {
     .container {
         margin: 50px 8%;

@@ -11,7 +11,7 @@ how to work every method to iterations
 
 **/
 const mode = (list = []) => {
-    let mode=arrayNum(list)
+    let mode = arrayNum(list)
     const listCount = {};
     list.map(e =>
         (listCount[e]) ?
@@ -25,5 +25,5 @@ const mode = (list = []) => {
         (E1 == E2) ?
         mode = 'Your Mode is ' + moda1 + ' and ' + moda2: mode = 'in this case your Mode is ' + moda1;
     })
-    return `Your list is: `+sort(list)+ ` and ${mode}`;
+    return `Your list is: ` + sort(list) + ` and ${mode}`;
 }

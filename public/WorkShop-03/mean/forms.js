@@ -42,3 +42,30 @@ const aritmeticMean = (list) => {
     return `Your Aritmetic mean is ${average.toPrecision(10)}`
     
 }
+const avoid = (field) => {
+    const div = document.querySelector('#result')
+    if (field !== "") {
+        div.parentNode.removeChild(div);
+    }
+}
+const active = (button, input) => {
+    const field = input.value.trim();
+    let idx = 0;
+    button.addEventListener('click', () => {
+        if (idx < 1) {
+            idx += 1;
+            button.disabled = (field !== "")
+        }
+        setTimeout(() => {
+            idx -= 1;
+        }, 10);
+    })
+}
+const listeningS = () => {
+    const input = document.querySelector("#input");
+    const button = document.querySelector("#event");
+    const field = input.value.trim();
+    button.disabled = (field == "")
+    active(button, input);
+    avoid(field)
+}

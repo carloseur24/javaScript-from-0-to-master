@@ -15,7 +15,7 @@ const par = (list) => {
 };
 
 const mean = (list) => {
-    const n=arrayNum(list)
+    const n = arrayNum(list)
     const sumList = n.reduce((init, next) => {
         return init + next;
     })
@@ -23,7 +23,7 @@ const mean = (list) => {
     return average
 }
 const median = (list) => {
-    const listN= arrayNum(list)
+    const listN = arrayNum(list)
     const middleList = parseInt(listN.length / 2);
     let median;
     if (par(listN)) {
@@ -39,4 +39,31 @@ const median = (list) => {
         median = listN[middleList]
         return `Your Median is ${median.toPrecision(10)}`
     };
+}
+const avoid = (field) => {
+    const div = document.querySelector('#result')
+    if (field !== "") {
+        div.parentNode.removeChild(div);
+    }
+}
+const active = (button, input) => {
+    const field = input.value.trim();
+    let idx = 0;
+    button.addEventListener('click', () => {
+        if (idx < 1) {
+            idx += 1;
+            button.disabled = (field !== "")
+        }
+        setTimeout(() => {
+            idx -= 1;
+        }, 10);
+    })
+}
+const listeningS = () => {
+    const input = document.querySelector("#input");
+    const button = document.querySelector("#event");
+    const field = input.value.trim();
+    button.disabled = (field == "")
+    active(button, input);
+    avoid(field)
 }

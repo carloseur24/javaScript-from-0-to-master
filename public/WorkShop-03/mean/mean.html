@@ -30,12 +30,12 @@
             </div>
             <div class="flex2">
                 <select id="select" type="number" placeholder="Any amount"></select>
-                <input id="input" type="text" placeholder="Ex: 1 1 1 1">
+                <input id="input" type="text" onkeyup="listeningS()" placeholder="Ex: 1 1 1 1">
             </div>
         </section>
-        <button class="button" type="button" onclick="generator()"><i
+        <button id='event' class="button" type="button" onclick="generator()" disabled><i
                 class="fa fa-duotone fa-arrows-rotate"></i></button>
-        <p class="result"></p>
+        <div class="result"></div>
     </div>
     <div class="back"><a href="/"><span class="iconify-inline" data-icon="bx:arrow-to-left" data-width="30"
                 data-flip="vertical"></a></div>
